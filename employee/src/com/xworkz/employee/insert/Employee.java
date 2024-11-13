@@ -30,8 +30,5 @@ public class Employee {
 
 	
 
-		public String getInsertQuery() {
-	
-			return insertQuery;
-		}
+		
 }

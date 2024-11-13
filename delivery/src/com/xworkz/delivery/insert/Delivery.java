@@ -27,8 +27,5 @@ public class Delivery {
 
 
 	}
-		public String getInsertQuery() {
-	
-			return insertQuery;
-		}
+		
 }

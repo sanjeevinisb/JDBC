@@ -32,8 +32,5 @@ public class Customer {
 
 
 	}
-		public String getInsertQuery() {
-	
-			return insertQuery;
-		}
+		
 }
