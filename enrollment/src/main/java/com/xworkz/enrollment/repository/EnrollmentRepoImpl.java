@@ -20,7 +20,7 @@ public class EnrollmentRepoImpl implements EnrollmentRepository {
         }
 
         try (Connection connection = DriverManager.getConnection(ConnectionEnum.URL.getValue(), ConnectionEnum.USERNAME.getValue(), ConnectionEnum.PASSWORD.getValue());
-             PreparedStatement prst = connection.prepareStatement("INSERT INTO details (id, name, email, address, phoneNumber) VALUES (?, ?, ?, ?, ?)")) {
+             PreparedStatement prst = connection.prepareStatement("INSERT INTO enrollment_table (id, name, email, address, phoneNumber) VALUES (?, ?, ?, ?, ?)")) {
             
             prst.setInt(1, enrollmentDTO.getId());
             prst.setString(2, enrollmentDTO.getName());
