@@ -12,7 +12,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
             System.out.println("subscriptionDTO is not null");
 
             String name = subscriptionDTO.getName();
-            if (name != null && !name.isEmpty() && name.length() >= 4 && name.length() <= 30) {
+            if (name != null && !name.isEmpty() && name.length() >= 6 && name.length() <= 16) {
                 System.out.println("Name is valid");
             } else {
                 System.err.println("Name is invalid");
